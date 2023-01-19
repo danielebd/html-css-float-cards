@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Rowdies', cursive;
     box-sizing: border-box;
 }
 
@@ -9,42 +9,65 @@ body {
     padding: 20px;
 }
 
+#div {
+    font-weight: lighter;
+}
 /* inizio header */
 
 header {
     margin: auto;
     text-align: center;
-    background-color: yellow;
+    padding: 30px 15px;
 }
 
 h2 {
     color: deeppink;
+    font-weight: 800;
 }
 
 /* fine header */
 
-.container {
-
+.container::after {
+    content:'';
+    clear: both;
+    display: block;
 }
 
 .box {
-    border: solid red;
     height: 100px;
-    width: calc (100% / 3 - 30px);
+    width: calc(100% / 3 - 30px);
     float: left;
     margin: 15px;
-    line-height: 100px;
-    text-align: center;
+    background-color: black;
+    box-sizing: border-box;
 }
 
 .box-img {
-    height: 100px;
-    width: 100px;
-    border: solid;
-    border-color: green;
     float: left;
+    width: 35%;
 }
 
 h3, p {
     color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.box-content {
+    color: white;
+    padding-top: 20px;
+    line-height: 22px;
+}
+
+a {
+    font-size: small;
+    color: aqua;
+}
+
+.prof {
+    font-weight: lighter;
+    font-size: small;
 }
